@@ -1,0 +1,7 @@
+# IntelliJ project files
+.idea/
+
+# Angular 2
+app/**/*.js
+app/**/*.js.map
+node_modules/

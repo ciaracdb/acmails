@@ -1,0 +1,138 @@
+/***********************************************************************************************\
+|*********************************** REGLES GENERALES ******************************************|
+\***********************************************************************************************/
+nav a {
+    outline: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.small {
+    width: 20%;
+}
+
+.medium {
+    width: 40%;
+}
+
+.picture {
+    max-width: 50%;
+    margin: auto;
+}
+
+/* RACCOURCIS */
+.center {
+    text-align: center;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.padding {
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+[draggable=true] {
+    user-select: none;
+    -moz-user-select: none;
+    cursor: move;
+}
+
+
+/***********************************************************************************************\
+|************************************* BOUTONS ********************************************|
+\***********************************************************************************************/
+.button {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(#f60c2f, #bd2d44);
+    border-radius: 3px;
+    box-shadow: 0 2px 3px #888888;
+    color: white;
+    padding: 10px;
+    border: none;
+    line-height: 1;
+    margin: 10px 5px;
+}
+
+.button:hover {
+    background: linear-gradient(#ff272f, #d9314b);
+    box-shadow: 0 2px 5px #888888;
+}
+
+.button:disabled {
+    background: linear-gradient(#ff9f91, #d9989d);
+}
+
+/* Fix bug sur Firefox donnant des height différents entre a.button et input.button */
+input.button::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+/***********************************************************************************************\
+|***************************************** ALERTE **********************************************|
+\***********************************************************************************************/
+.hidden{
+    display: none;
+}
+
+#alerte{
+    position : fixed;
+    width: calc(100% - 50px);
+    padding: 15px;
+    margin: 10px 10px 0 10px;
+    border-radius: 3px;
+}
+
+.success{
+    background-color: rgba(85, 210, 99, 0.77);
+    box-shadow: 0 4px 8px #54ad5e;
+}
+
+.error{
+    background-color: rgba(255, 20, 27, 0.77);
+    box-shadow: 0 4px 8px #ad0f26;
+}
+
+/***********************************************************************************************\
+|************************************ Angular Loading ******************************************|
+\***********************************************************************************************/
+.loading {
+    text-align: center;
+    margin: 10% auto;
+    width: 40%;
+    vertical-align: middle;
+    font-size: xx-large;
+}
+
+.loading img {
+    width: 40%;
+    vertical-align: middle;
+}

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "ACMails",
+  "description": "Mail client extension",
+  "version": "1.0",
+  "background": {
+    "scripts": ["extension.js"]
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

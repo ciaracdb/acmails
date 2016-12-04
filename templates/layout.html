@@ -1,0 +1,10 @@
+<header id="entete">
+    <a routerLink="/">
+        <img id="logo" alt="logo" src="images/icon.png"/>
+        <span id="sitename">ACMails</span>
+    </a>
+    <nav>
+        <a routerLink="/" routerLinkActive="menu-selected" [routerLinkActiveOptions]="{exact: true}">Mails</a>
+    </nav>
+</header>
+<router-outlet></router-outlet>
