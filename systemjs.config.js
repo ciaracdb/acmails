@@ -4,6 +4,7 @@
  */
 (function(global) {
     System.config({
+        defaultJSExtensions: true,
         paths: {
             // paths serve as alias
             'npm:': 'node_modules/'
@@ -28,11 +29,28 @@
 
             'emailjs-tcp-socket-tls': 'npm:emailjs-tcp-socket/src/emailjs-tcp-socket-tls.js',
             'emailjs-tcp-socket': 'npm:emailjs-tcp-socket/src/emailjs-tcp-socket.js',
-            'emailjs-stringencoding': 'npm:/emailjs-stringencoding/src/emailjs-stringencoding.js',
-            'emailjs-imap-client': 'npm:emailjs-imap-client/src/emailjs-imap-client.js',
-            'emailjs-smtp-client-response-parser': 'npm:emailjs-smtp-client/src/emailjs-smtp-client-response-parser.js',
-            'emailjs-smtp-client': 'npm:emailjs-smtp-client/src/emailjs-smtp-client.js'
 
+            'emailjs-stringencoding': 'npm:/emailjs-stringencoding/src/emailjs-stringencoding.js',
+
+            'emailjs-imap-client': 'npm:emailjs-imap-client/src/emailjs-imap-client.js',
+            'emailjs-imap-client-compression': 'npm:emailjs-imap-client/src/emailjs-imap-client-compression.js',
+            'emailjs-imap-client-compression-worker': 'npm:emailjs-imap-client/src/emailjs-imap-client-compression-worker.js',
+            'emailjs-imap-client-imap': 'npm:emailjs-imap-client/src/emailjs-imap-client-imap.js',
+            'emailjs-imap-client-pako': 'npm:emailjs-imap-client/src/emailjs-imap-client-pako.js',
+
+            'emailjs-smtp-client': 'npm:emailjs-smtp-client/src/emailjs-smtp-client.js',
+            'emailjs-smtp-client-response-parser': 'npm:emailjs-smtp-client/src/emailjs-smtp-client-response-parser.js',
+
+            'emailjs-addressparser': 'npm:emailjs-addressparser/src/emailjs-addressparser.js',
+
+            'emailjs-imap-handler': 'npm:emailjs-imap-handler/src/emailjs-imap-handler.js',
+            'emailjs-imap-compiler': 'npm:emailjs-imap-handler/src/emailjs-imap-compiler.js',
+            'emailjs-imap-parser': 'npm:emailjs-imap-handler/src/emailjs-imap-parser.js',
+            'emailjs-imap-formal-syntax': 'npm:emailjs-imap-handler/src/emailjs-imap-formal-syntax.js',
+
+            'emailjs-utf7': 'npm:emailjs-utf7/src/emailjs-utf7.js',
+
+            'emailjs-mime-codec': 'npm:emailjs-mime-codec/src/emailjs-mime-codec.js'
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {

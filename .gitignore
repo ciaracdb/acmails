@@ -4,4 +4,7 @@
 # Angular 2
 app/**/*.js
 app/**/*.js.map
+
+# Node
 node_modules/
+*.log
