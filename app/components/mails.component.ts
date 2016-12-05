@@ -6,4 +6,8 @@ import {Component} from '@angular/core';
 })
 
 export class MailsComponent {
+    constructor() {
+        let SmtpClient = require('emailjs-smtp-client');
+        var client = new SmtpClient();
+    }
 }

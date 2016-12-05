@@ -11,7 +11,7 @@
         // map tells the System loader where to look for things
         map: {
             // our app is within the app folder
-            app: 'app',
+            'app': 'app',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -23,7 +23,16 @@
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
             '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
             // other libraries
-            'rxjs': 'npm:rxjs'
+            'rxjs': 'npm:rxjs',
+            'forge': 'npm:node-forge/js',
+
+            'emailjs-tcp-socket-tls': 'npm:emailjs-tcp-socket/src/emailjs-tcp-socket-tls.js',
+            'emailjs-tcp-socket': 'npm:emailjs-tcp-socket/src/emailjs-tcp-socket.js',
+            'emailjs-stringencoding': 'npm:/emailjs-stringencoding/src/emailjs-stringencoding.js',
+            'emailjs-imap-client': 'npm:emailjs-imap-client/src/emailjs-imap-client.js',
+            'emailjs-smtp-client-response-parser': 'npm:emailjs-smtp-client/src/emailjs-smtp-client-response-parser.js',
+            'emailjs-smtp-client': 'npm:emailjs-smtp-client/src/emailjs-smtp-client.js'
+
         },
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
@@ -32,6 +41,10 @@
                 defaultExtension: 'js'
             },
             rxjs: {
+                defaultExtension: 'js'
+            },
+            forge: {
+                main: './forge.js',
                 defaultExtension: 'js'
             }
         }
