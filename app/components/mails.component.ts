@@ -7,7 +7,6 @@ import {Component} from '@angular/core';
 
 export class MailsComponent {
     constructor() {
-        console.log(navigator.TCPSocket);
         let ImapClient = require('emailjs-imap-client');
         let client = new ImapClient(host, port, {
             auth: {user: username, pass: password}

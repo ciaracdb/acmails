@@ -1,10 +1,12 @@
 {
   "name": "acmails",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "nwmain.js",
   "scripts": {
-    "start": "cd ./nw-dev/ && nw.exe .. --mixed-context && tsc -w",
-    "tsc": "tsc"
+    "start": "tsc -w",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "launch": "cd ./nw-dev/ && nw.exe .. --mixed-context "
   },
   "repository": {
     "type": "git",
