@@ -2,7 +2,9 @@
   "name": "acmails",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc -w"
+    "start": "tsc && concurrently \"tsc -w\" \"http-server\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
   "devDependencies": {
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
+    "concurrently": "^3.1.0",
+    "http-server": "^0.9.0",
     "typescript": "^2.0.3"
   }
 }
