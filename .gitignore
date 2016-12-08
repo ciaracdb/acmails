@@ -8,3 +8,7 @@ app/**/*.js.map
 # Node
 node_modules/
 *.log
+
+# NW.js
+nw/
+nw-dev/

@@ -1,10 +1,10 @@
 {
   "name": "acmails",
   "version": "1.0.0",
+  "main": "index.html",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"http-server\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "start": "cd ./nw-dev/ && nw.exe .. --mixed-context && tsc -w",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
