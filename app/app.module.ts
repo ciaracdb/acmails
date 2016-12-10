@@ -7,6 +7,8 @@ import {HttpModule}    from '@angular/http';
 import {AppComponent} from './components/app.component';
 import {MailsComponent} from './components/mails.component'
 
+import {IMAPService} from './services/IMAPService'
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -24,6 +26,7 @@ import {MailsComponent} from './components/mails.component'
         MailsComponent,
     ],
     providers: [
+        IMAPService
     ],
     bootstrap: [AppComponent]
 })

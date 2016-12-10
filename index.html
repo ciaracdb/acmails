@@ -13,9 +13,9 @@
     <!--<script src="node_modules/systemjs/dist/system.src.js"></script>-->
 
     <!--<script src="node_modules/node-forge/js/forge.js"></script>-->
+    <script src="node_modules/emailjs-stringencoding/src/emailjs-stringencoding.js"></script>
     <script src="node_modules/emailjs-tcp-socket/src/emailjs-tcp-socket-tls.js"></script>
     <script src="node_modules/emailjs-tcp-socket/src/emailjs-tcp-socket.js"></script>
-
     <!--<script src="systemjs.config.js"></script>-->
 </head>
 <body>
@@ -28,7 +28,14 @@
         <img src="images/loading.gif" width="50%"/>
     </p>
 </app>
-
-<script>require('./app/main.js'); </script>
+<script>
+    if(window.location.protocol == 'http:') {
+        System.import('app').catch(function(err) {
+            console.error(err);
+        });
+    } else {
+        require('./app/main.js');
+    }
+</script>
 </body>
 </html>

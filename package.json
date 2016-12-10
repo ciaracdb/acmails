@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "nwmain.js",
   "scripts": {
-    "start": "tsc -w",
+    "start": "tsc && npm run launch",
+    "http": "http-server -c-1",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "launch": "cd ./nw-dev/ && nw.exe .. --mixed-context "
+    "launch": "cd ./nw-dev/ && nw.exe .. --mixed-context"
   },
   "repository": {
     "type": "git",
